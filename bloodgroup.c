@@ -16,7 +16,7 @@ void main()
                             strcmp(G, "B") !=0  &&
                             strcmp(G, "AB") !=0   &&
                             strcmp(G, "O") !=0 )
-        printf("Blood group %s is incorrect! Please try again.\n", G);
+        printf("Blood group %s is not existed! Please try again.\n", G);
     }  while (strcmp(G, "A") !=0  &&
                             strcmp(G, "B") !=0  &&
                             strcmp(G, "AB") !=0   &&
@@ -41,8 +41,8 @@ void main()
       printf("%s, O. Nice! You can give blood to all: O, A, B, AB\n", Name);
       printf("  But Sad! You can receive blood only from: O\n");
     }
-    printf("\nContinue (YES for Yes)? ");
+    printf("\nContinue (yes for Yes)? ");
     scanf("%s", answer);
-  } while (strcmp(answer, "YES") == 0);
+  } while (strcmp(answer, "yes") == 0);
   printf("Goodbye\n");
 }
